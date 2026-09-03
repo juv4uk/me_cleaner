@@ -1,0 +1,12 @@
+; tasks.my — durable task plan for me_cleaner (vendored third-party
+; Intel ME firmware modification tool).
+
+((tasks . (
+  ("ME-CLEANER-VERIFY-LICENSE-AND-DOCUMENT-ROLE" . (
+    (priority . 4.5)
+    (capabilities . (documentation license firmware))
+    (origin . me_cleaner)
+    (description . "Vendored third-party tool with no LICENSE file found locally in this checkout (upstream me_cleaner is GPLv3 -- verify this copy actually carries that, rather than assuming). Write a short NOTICE documenting its role in the ME/HECI hardware research line and confirm license terms are correctly represented here, since firmware-modification tools carry real legal/safety weight if terms are misrepresented.")
+    (done . ())
+  ))
+)))
